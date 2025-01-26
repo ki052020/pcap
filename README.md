@@ -24,3 +24,20 @@ make を利用してビルドして、実行する。
 
 キャプチャする「デバイス名」を指定して実行する。
 パケットを 5個受信したら、終了するようになっている。
+```
+./pcap enp2s0
+
+IPv4 [46 bytes]
+IPv4 ヘッダ ----------
+version=4, ihl=5, tos=0, tot_len=40, id=38051
+frag_off=2, 0, ttl=127, protocol=6(TCP), check=6d81
+saddr=192.168.0.80, daddr=192.168.100.30
+
+IPv4 [220 bytes]
+IPv4 ヘッダ ----------
+version=4, ihl=5, tos=10, tot_len=220, id=50830
+frag_off=2, 0, ttl=64, protocol=6(TCP), check=be8d
+saddr=192.168.100.30, daddr=192.168.0.80
+
+...
+```
